@@ -23,7 +23,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">AptosAccount</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L24">src/aptos_account.ts:24</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L23">src/account/aptos_account.ts:23</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -46,6 +46,7 @@
 <a href="AptosAccount.html#signBuffer" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>sign<wbr/>Buffer</span></a>
 <a href="AptosAccount.html#signHexString" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>sign<wbr/>Hex<wbr/>String</span></a>
 <a href="AptosAccount.html#toPrivateKeyObject" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>to<wbr/>Private<wbr/>Key<wbr/>Object</span></a>
+<a href="AptosAccount.html#verifySignature" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>verify<wbr/>Signature</span></a>
 <a href="AptosAccount.html#fromAptosAccountObject" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>from<wbr/>Aptos<wbr/>Account<wbr/>Object</span></a>
 <a href="AptosAccount.html#fromDerivePath" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>from<wbr/>Derive<wbr/>Path</span></a>
 <a href="AptosAccount.html#getResourceAccountAddress" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Resource<wbr/>Account<wbr/>Address</span></a>
@@ -76,7 +77,7 @@ If not specified, a new one will be generated from public key</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="AptosAccount.html" class="tsd-signature-type" data-tsd-kind="Class">AptosAccount</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L80">src/aptos_account.ts:80</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L76">src/account/aptos_account.ts:76</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="accountAddress" class="tsd-anchor"></a>
@@ -85,14 +86,14 @@ If not specified, a new one will be generated from public key</p>
 <div class="tsd-comment tsd-typography"><p>Address associated with the given account</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L33">src/aptos_account.ts:33</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L32">src/account/aptos_account.ts:32</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="signingKey" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>signing<wbr/>Key</span><a href="#signingKey" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">signing<wbr/>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SignKeyPair</span></div>
 <div class="tsd-comment tsd-typography"><p>A private key and public key, associated with the given account</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L28">src/aptos_account.ts:28</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L27">src/account/aptos_account.ts:27</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="address" class="tsd-anchor"></a>
@@ -108,7 +109,7 @@ of the public key(s) concatenated with a signature scheme identifier byte</p>
 </div>
 <h4 class="tsd-returns-title">Returns <a href="HexString.html" class="tsd-signature-type" data-tsd-kind="Class">HexString</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L95">src/aptos_account.ts:95</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L91">src/account/aptos_account.ts:91</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="authKey" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>auth<wbr/>Key</span><a href="#authKey" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -122,7 +123,7 @@ See here for more info: <a href="https://aptos.dev/concepts/accounts#single-sign
 </div>
 <h4 class="tsd-returns-title">Returns <a href="HexString.html" class="tsd-signature-type" data-tsd-kind="Class">HexString</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L105">src/aptos_account.ts:105</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L101">src/account/aptos_account.ts:101</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="pubKey" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>pub<wbr/>Key</span><a href="#pubKey" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -135,7 +136,7 @@ Public key is used to check a signature of transaction, signed by given account<
 </div>
 <h4 class="tsd-returns-title">Returns <a href="HexString.html" class="tsd-signature-type" data-tsd-kind="Class">HexString</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L135">src/aptos_account.ts:135</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L131">src/account/aptos_account.ts:131</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="signBuffer" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sign<wbr/>Buffer</span><a href="#signBuffer" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -154,7 +155,7 @@ Public key is used to check a signature of transaction, signed by given account<
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="HexString.html" class="tsd-signature-type" data-tsd-kind="Class">HexString</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L144">src/aptos_account.ts:144</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L140">src/account/aptos_account.ts:140</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="signHexString" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sign<wbr/>Hex<wbr/>String</span><a href="#signHexString" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -173,7 +174,7 @@ Public key is used to check a signature of transaction, signed by given account<
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="HexString.html" class="tsd-signature-type" data-tsd-kind="Class">HexString</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L154">src/aptos_account.ts:154</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L150">src/account/aptos_account.ts:150</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="toPrivateKeyObject" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>to<wbr/>Private<wbr/>Key<wbr/>Object</span><a href="#toPrivateKeyObject" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -184,12 +185,33 @@ Public key is used to check a signature of transaction, signed by given account<
 <h3>Returns</h3><p>AptosAccountObject instance.</p>
 
 <h3>Example</h3><p>An example of the returned AptosAccountObject object</p>
-<pre><code><span class="hl-0">{</span><br/><span class="hl-0">   </span><span class="hl-12">address</span><span class="hl-0">: </span><span class="hl-2">&quot;0xe8012714cd17606cee7188a2a365eef3fe760be598750678c8c5954eb548a591&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-12">publicKeyHex</span><span class="hl-0">: </span><span class="hl-2">&quot;0xf56d8524faf79fbc0f48c13aeed3b0ce5dd376b4db93b8130a107c0a5e04ba04&quot;</span><span class="hl-0">,</span><br/><span class="hl-0">   </span><span class="hl-12">privateKeyHex</span><span class="hl-0">: </span><span class="hl-2">`0x009c9f7c992a06cfafe916f125d8adb7a395fca243e264a8e56a4b3e6accf940</span><br/><span class="hl-2">     d2b11e9ece3049ce60e3c7b4a1c58aebfa9298e29a30a58a67f1998646135204`</span><br/><span class="hl-0">}</span>
+<pre><code><span class="hl-1">{</span><br/><span class="hl-1">   </span><span class="hl-10">address</span><span class="hl-1">: </span><span class="hl-2">&quot;0xe8012714cd17606cee7188a2a365eef3fe760be598750678c8c5954eb548a591&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">   </span><span class="hl-10">publicKeyHex</span><span class="hl-1">: </span><span class="hl-2">&quot;0xf56d8524faf79fbc0f48c13aeed3b0ce5dd376b4db93b8130a107c0a5e04ba04&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">   </span><span class="hl-10">privateKeyHex</span><span class="hl-1">: </span><span class="hl-2">`0x009c9f7c992a06cfafe916f125d8adb7a395fca243e264a8e56a4b3e6accf940</span><br/><span class="hl-2">     d2b11e9ece3049ce60e3c7b4a1c58aebfa9298e29a30a58a67f1998646135204`</span><br/><span class="hl-1">}</span>
 </code></pre>
 </div>
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/AptosAccountObject.html" class="tsd-signature-type" data-tsd-kind="Interface">AptosAccountObject</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L172">src/aptos_account.ts:172</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L179">src/account/aptos_account.ts:179</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="verifySignature" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>verify<wbr/>Signature</span><a href="#verifySignature" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="verifySignature.verifySignature-1">verify<wbr/>Signature<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><a href="../types/MaybeHexString.html" class="tsd-signature-type" data-tsd-kind="Type alias">MaybeHexString</a>, signature<span class="tsd-signature-symbol">: </span><a href="../types/MaybeHexString.html" class="tsd-signature-type" data-tsd-kind="Type alias">MaybeHexString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#verifySignature.verifySignature-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Verifies the signature of the message with the public key of the account</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>message: <a href="../types/MaybeHexString.html" class="tsd-signature-type" data-tsd-kind="Type alias">MaybeHexString</a></h5>
+<div class="tsd-comment tsd-typography"><p>a signed message</p>
+</div></li>
+<li>
+<h5>signature: <a href="../types/MaybeHexString.html" class="tsd-signature-type" data-tsd-kind="Type alias">MaybeHexString</a></h5>
+<div class="tsd-comment tsd-typography"><p>the signature of the message</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L160">src/account/aptos_account.ts:160</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="fromAptosAccountObject" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>from<wbr/>Aptos<wbr/>Account<wbr/>Object</span><a href="#fromAptosAccountObject" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -202,7 +224,7 @@ Public key is used to check a signature of transaction, signed by given account<
 <h5>obj: <a href="../interfaces/AptosAccountObject.html" class="tsd-signature-type" data-tsd-kind="Interface">AptosAccountObject</a></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="AptosAccount.html" class="tsd-signature-type" data-tsd-kind="Class">AptosAccount</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L35">src/aptos_account.ts:35</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L34">src/account/aptos_account.ts:34</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="fromDerivePath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>from<wbr/>Derive<wbr/>Path</span><a href="#fromDerivePath" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -221,7 +243,7 @@ Public key is used to check a signature of transaction, signed by given account<
 <h5>mnemonics: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="AptosAccount.html" class="tsd-signature-type" data-tsd-kind="Class">AptosAccount</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L56">src/aptos_account.ts:56</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L52">src/account/aptos_account.ts:52</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="getResourceAccountAddress" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>get<wbr/>Resource<wbr/>Account<wbr/>Address</span><a href="#getResourceAccountAddress" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -244,7 +266,7 @@ Public key is used to check a signature of transaction, signed by given account<
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="HexString.html" class="tsd-signature-type" data-tsd-kind="Class">HexString</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L119">src/aptos_account.ts:119</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L115">src/account/aptos_account.ts:115</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="isValidPath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>is<wbr/>Valid<wbr/>Path</span><a href="#isValidPath" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -259,7 +281,7 @@ Public key is used to check a signature of transaction, signed by given account<
 <h5>path: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/aptos_account.ts#L42">src/aptos_account.ts:42</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/account/aptos_account.ts#L41">src/account/aptos_account.ts:41</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -298,6 +320,7 @@ Public key is used to check a signature of transaction, signed by given account<
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="AptosAccount.html#signBuffer" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>sign<wbr/>Buffer</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="AptosAccount.html#signHexString" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>sign<wbr/>Hex<wbr/>String</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="AptosAccount.html#toPrivateKeyObject" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>to<wbr/>Private<wbr/>Key<wbr/>Object</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="AptosAccount.html#verifySignature" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>verify<wbr/>Signature</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="AptosAccount.html#fromAptosAccountObject" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>from<wbr/>Aptos<wbr/>Account<wbr/>Object</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="AptosAccount.html#fromDerivePath" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>from<wbr/>Derive<wbr/>Path</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="AptosAccount.html#getResourceAccountAddress" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Resource<wbr/>Account<wbr/>Address</a></li>

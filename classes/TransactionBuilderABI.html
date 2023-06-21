@@ -23,7 +23,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">TransactionBuilderABI</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L161">src/transaction_builder/builder.ts:161</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L167">src/transaction_builder/builder.ts:167</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -68,19 +68,19 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="TransactionBuilderABI.html" class="tsd-signature-type" data-tsd-kind="Class">TransactionBuilderABI</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L171">src/transaction_builder/builder.ts:171</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L177">src/transaction_builder/builder.ts:177</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="abiMap" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>abi<wbr/>Map</span><a href="#abiMap" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">abi<wbr/>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="TxnBuilderTypes.ScriptABI.html" class="tsd-signature-type" data-tsd-kind="Class">ScriptABI</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L162">src/transaction_builder/builder.ts:162</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L168">src/transaction_builder/builder.ts:168</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="builderConfig" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>builder<wbr/>Config</span><a href="#builderConfig" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">builder<wbr/>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ABIBuilderConfig</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L164">src/transaction_builder/builder.ts:164</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L170">src/transaction_builder/builder.ts:170</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="build" class="tsd-anchor"></a>
@@ -91,7 +91,7 @@
 <div class="tsd-comment tsd-typography"><p>Builds a RawTransaction</p>
 
 <h3>Example</h3><p>Below are valid value examples</p>
-<pre><code><span class="hl-8">// Structs are in format `AccountAddress::ModuleName::StructName`</span><br/><span class="hl-7">0x1</span><span class="hl-0">::</span><span class="hl-12">aptos_coin</span><span class="hl-0">::</span><span class="hl-1">AptosCoin</span><br/><span class="hl-8">// Vectors are in format `vector&lt;other_tag_string&gt;`</span><br/><span class="hl-1">vector</span><span class="hl-0">&lt;</span><span class="hl-7">0x1</span><span class="hl-0">::</span><span class="hl-12">aptos_coin</span><span class="hl-0">::</span><span class="hl-1">AptosCoin</span><span class="hl-0">&gt;</span><br/><span class="hl-1">bool</span><br/><span class="hl-1">u8</span><br/><span class="hl-1">u16</span><br/><span class="hl-1">u32</span><br/><span class="hl-1">u64</span><br/><span class="hl-1">u128</span><br/><span class="hl-1">u256</span><br/><span class="hl-1">address</span>
+<pre><code><span class="hl-3">// Structs are in format `AccountAddress::ModuleName::StructName`</span><br/><span class="hl-6">0x1</span><span class="hl-1">::</span><span class="hl-10">aptos_coin</span><span class="hl-1">::</span><span class="hl-0">AptosCoin</span><br/><span class="hl-3">// Vectors are in format `vector&lt;other_tag_string&gt;`</span><br/><span class="hl-0">vector</span><span class="hl-1">&lt;</span><span class="hl-6">0x1</span><span class="hl-1">::</span><span class="hl-10">aptos_coin</span><span class="hl-1">::</span><span class="hl-0">AptosCoin</span><span class="hl-1">&gt;</span><br/><span class="hl-0">bool</span><br/><span class="hl-0">u8</span><br/><span class="hl-0">u16</span><br/><span class="hl-0">u32</span><br/><span class="hl-0">u64</span><br/><span class="hl-0">u128</span><br/><span class="hl-0">u256</span><br/><span class="hl-0">address</span>
 </code></pre>
 
 <h3>Returns</h3><p>RawTransaction</p>
@@ -113,7 +113,7 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="TxnBuilderTypes.RawTransaction.html" class="tsd-signature-type" data-tsd-kind="Class">RawTransaction</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L286">src/transaction_builder/builder.ts:286</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L292">src/transaction_builder/builder.ts:292</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="buildTransactionPayload" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>build<wbr/>Transaction<wbr/>Payload</span><a href="#buildTransactionPayload" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -142,7 +142,7 @@ and pass the payload to the wallet for signing and sending.</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="../modules/TxnBuilderTypes.html" class="tsd-signature-type" data-tsd-kind="Namespace">TxnBuilderTypes</a><span class="tsd-signature-symbol">.</span><a href="TxnBuilderTypes.TransactionPayload.html" class="tsd-signature-type" data-tsd-kind="Class">TransactionPayload</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L234">src/transaction_builder/builder.ts:234</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L240">src/transaction_builder/builder.ts:240</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="setSequenceNumber" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>set<wbr/>Sequence<wbr/>Number</span><a href="#setSequenceNumber" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -155,7 +155,7 @@ and pass the payload to the wallet for signing and sending.</p>
 <h5>seqNumber: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L221">src/transaction_builder/builder.ts:221</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L227">src/transaction_builder/builder.ts:227</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="toBCSArgs" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <code class="tsd-tag ts-flagPrivate">Private</code> <span>toBCSArgs</span><a href="#toBCSArgs" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -170,7 +170,7 @@ and pass the payload to the wallet for signing and sending.</p>
 <h5>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L201">src/transaction_builder/builder.ts:201</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L207">src/transaction_builder/builder.ts:207</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private"><a id="toTransactionArguments" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <code class="tsd-tag ts-flagPrivate">Private</code> <span>to<wbr/>Transaction<wbr/>Arguments</span><a href="#toTransactionArguments" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -185,7 +185,7 @@ and pass the payload to the wallet for signing and sending.</p>
 <h5>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="TxnBuilderTypes.TransactionArgument.html" class="tsd-signature-type" data-tsd-kind="Class">TransactionArgument</a><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/712975f9dd/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L213">src/transaction_builder/builder.ts:213</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/aptos-labs/aptos-core/blob/d8c0c7ffb8/ecosystem/typescript/sdk/src/transaction_builder/builder.ts#L219">src/transaction_builder/builder.ts:219</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
